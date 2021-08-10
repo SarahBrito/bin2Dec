@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 20px;
+  font-family: 'Barlow', sans-serif;
+  margin-bottom: 50px;
+  
+}
+
+h1 {
+  color: #0CCE6B;
+}
+
+p {
+  padding-top: 8px;
+  font-size: 15pt;
+}
+
+
+body {
+  background: linear-gradient(360deg, #11151c,#11151c, #0b090a);
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  
+}
+
+.main {
+  display: grid; 
+  color:whitesmoke;
+  height: 132px;
+  width: 456px;
+  grid-gap: 10px;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr 1fr; 
+ 
+}
+
+
+.main__input-bin {
+  width: 300px;
+  height: 45px;
+  grid-column-start: 1;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16pt;
+  padding-left: 5px ;
+  border-radius: 5px;
+  border: 0;
+  
+}
+
+.main__result {
+  display: flex;
+  background: #0b090a;
+  opacity: 0.2;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 50px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18pt;
+  
+}
+
+
+.button {
+  background: #CF3321;
+  font-family: 'Barlow', sans-serif;
+  font-size: 15pt;
+  border: 0;
+  width: 150px;
+  height:46px;
+  grid-column-start: 2;
+  grid-row-end: 1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: #3321CF;
+  color: aliceblue;
+  transition: background 0.4s;
+}
+
+.msg__error {
+  
+  font-family: 'Roboto Mono', monospace;
+  font-size: 10pt;
+  color: red;
+}

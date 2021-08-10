@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bin2Dec</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Bin2Dec</h1>
+    <p>Conversor de número <em>binário</em> para <em>decimal</em></p>
+  </header>
+  <section class="main">
+    
+    <div class="msg__error"></div>
+    
+    <div class="input">
+      <input type="text" class="main__input-bin" placeholder="Bin" maxlength="8">
+      <input class="button" type="button" value="Converter" onclick="toConvert()">
+    </div>
+    
+    <div class="main__result">Resultado da conversão</div>
+    
+  </section>
+  <script src="bin2Dec.js"></script>
+</body>
+</html>
