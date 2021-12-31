@@ -6,11 +6,11 @@ Projeto que converte um número binário em número decimal.
 <br><br>
 
 <h1>☑️ Recursos</h1>
-    
-    - [x] O usuário pode inserir até 8 dígitos binários em um campo de entrada
-    - [x] O usuário deve ser notificado se algo diferente de 0 ou 1 foi inserido 
-    - [x] O usuário visualiza os resultados em um único campo de saída contendo o equivalente decimal (base 10) do número binário que foi inserido
-    
+    <ul>
+        <li>O usuário pode inserir até 8 dígitos binários em um campo de entrada✔️</li>
+        <li>O usuário deve ser notificado se algo diferente de 0 ou 1 foi inserido ✔️</li>
+        <li>O usuário visualiza os resultados em um único campo de saída contendo o equivalente decimal (base 10) do número binário que foi inserido ✔️</li>
+    </ul>
     
 <br><br>
 
