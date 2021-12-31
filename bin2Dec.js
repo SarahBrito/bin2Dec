@@ -1,3 +1,4 @@
+let result = document.querySelector(".main__result")
 
 function toConvert(){
   let bin = document.querySelector(".main__input-bin").value
@@ -9,8 +10,9 @@ function toConvert(){
     
     if (binNumber[i] !="1" && binNumber[i] != "0"){
       isBin = false
+      result.style.display = "none"
       document.querySelector(".msg__error").innerHTML = "Número inválido (digite apenas 0 ou 1)"
-      document.querySelector(".main__result").innerHTML = ""
+      
       break
     }
     decNumber += Number(binNumber[i]) * Math.pow(2,i)
@@ -18,8 +20,8 @@ function toConvert(){
   
   if (isBin === true){
 
-    let text = document.querySelector(".main__result")
-    text.style.cssText = "opacity: 0.8;" + "color: #0cce6b;"
+    
+    result.style.display = "block"
     document.querySelector(".msg__error").innerHTML = ""
     document.querySelector(".main__result").innerHTML = `${bin}(bin) = ${decNumber}(dec)`
   }

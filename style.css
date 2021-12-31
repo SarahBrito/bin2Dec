@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 
 *{
@@ -6,14 +6,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background: linear-gradient(360deg, #11151c,#11151c, #0b090a);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto Mono', monospace;
+}
 
 header {
   text-align: center;
-  color: aliceblue;
-  margin-bottom: 20px;
-  font-family: 'Barlow', sans-serif;
-  margin-bottom: 50px;
-  
+  margin-bottom: 24px;
 }
 
 h1 {
@@ -21,86 +26,80 @@ h1 {
 }
 
 p {
-  padding-top: 8px;
-  font-size: 15pt;
-}
-
-
-body {
-  background: linear-gradient(360deg, #11151c,#11151c, #0b090a);
-  height: 100vh;
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  
+  font-size: 1.14rem;
+  color: #f5f5f5;
+  padding: 8px;
 }
 
 .main {
-  display: grid; 
+  display: flex;
+  flex-direction: column; 
   color:white;
   height: 200px;
   width: 500px;
-  grid-template-columns: 1fr ;
-  grid-template-rows: 1fr 1fr; 
-  
 }
 
 .main__input-bin {
-  width: 300px;
-  height: 45px;
-  grid-column-start: 1;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 16pt;
-  margin-right: 6px;
-  padding-left: 6px;
-  border-radius: 5px;
-  border: 0;
   
-}
-.input{
-  margin: 0 auto;
-  margin-top: -70px;
+  width: 70%;
+  height: 44px;
+  padding: 0 8px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  border: none;
+  outline: none;
 }
 
-.main__result {
+.input{
   display: flex;
-  background: #0b090a;
-  opacity: 0.2;
   justify-content: center;
-  align-items: center;
-  width: 450px;
-  height: 50px;
-  margin: 0 auto;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 18pt;
-  margin-top: -90px;
+  gap: 12px;
+  
+}
+
+
+.main__result {
+  display: none;
+  background: rgba(11, 9, 10, 0.5);
+  padding: 16px 0;
+  border-radius: 4px;
+  margin-top: 24px;
+  text-align: center;
+  color: #0CCE6B;
+  font-size: 1.4rem;
   
 }
 
 
 .button {
-  background: #CF3321;
-  font-family: 'Barlow', sans-serif;
-  font-size: 15pt;
-  border: 0;
-  width: 150px;
-  height:46px;
-  grid-column-start: 2;
-  grid-row-end: 1;
-  border-radius: 5px;
+  background: #b22222;
+  color: #0b090a;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.14rem;
+  border: none;
+  padding: 0 12px;
+  height:44px;
+  border-radius: 4px;
+  opacity: 0.9;
   cursor: pointer;
 }
 
 .button:hover{
-  background-color: #3321CF;
-  color: aliceblue;
-  transition: background 0.4s;
+  opacity: 1;
+  transition: background 0.3s;
 }
 
 .msg__error {
-  margin-left: 22px;
-  
-  font-family: 'Roboto Mono', monospace;
-  font-size: 10pt;
+
+  padding: 8px;
+  font-size: 0.8rem;
   color: red;
+}
+
+@media screen and (max-width: 550px){
+  .main {
+    border: 1px solid red;
+    width: 90vw;
+  }
 }
